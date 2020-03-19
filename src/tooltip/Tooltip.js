@@ -33,6 +33,10 @@ class Tooltip extends React.PureComponent {
     });
   };
 
+  handleOpenClose = (value) => {
+    this.setState({ isVisible: value})
+  }
+
   wrapWithPress = (toggleOnPress, children) => {
     if (toggleOnPress) {
       return (
